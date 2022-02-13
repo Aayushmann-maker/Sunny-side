@@ -1,0 +1,33 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 44rem;
+  grid-auto-rows: 44rem;
+}
+
+.gallery > div {
+  background-size: cover;
+}
+.gallery-item-1 {
+  background-image: url("../../images//desktop/image-gallery-milkbottles.jpg");
+}
+
+.gallery-item-2 {
+  background-image: url("../../images//desktop/image-gallery-orange.jpg");
+}
+
+.gallery-item-3 {
+  background-image: url("../../images//desktop/image-gallery-cone.jpg");
+}
+
+.gallery-item-4 {
+  background-image: url("../../images//desktop/image-gallery-sugarcubes.jpg");
+}
+
+@media (max-width: 56.25em) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 22rem;
+    grid-auto-rows: 22rem;
+  }
+}

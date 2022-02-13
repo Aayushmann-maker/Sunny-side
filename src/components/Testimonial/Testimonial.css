@@ -1,0 +1,36 @@
+.testimonial {
+  padding: 12rem 6rem 10rem;
+}
+
+.testimonial__heading {
+  font-size: 2.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.603);
+  font-family: "Fraunces", serif;
+  margin-bottom: 8rem;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+  gap: 4.2rem;
+}
+
+@media (max-width: 56.25em) {
+  .testimonial {
+    padding: 7rem 4rem 3.7rem;
+  }
+  .testimonial {
+    padding: 2.5rem 0.7rem 8rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .testimonial__heading {
+    margin-bottom: 4rem;
+  }
+  .testimonial-container {
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  }
+}

@@ -1,0 +1,122 @@
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 58rem);
+  grid-auto-rows: 58rem;
+}
+
+.showcase-item-1,
+.showcase-item-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.showcase-item-1 h2,
+.showcase-item-4 h2 {
+  font-size: 3rem;
+  margin-bottom: 3.5rem;
+  font-family: "Fraunces", serif;
+}
+
+.showcase-item-1 p,
+.showcase-item-4 p {
+  margin-bottom: 4rem;
+  color: rgba(0, 0, 0, 0.562);
+}
+
+.showcase-item-1 a,
+.showcase-item-4 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+  align-self: flex-start;
+}
+
+.btn--yellow:hover {
+  border-color: hsl(51, 100%, 49%);
+}
+
+.btn--red:hover {
+  border-color: hsl(7, 99%, 70%);
+}
+
+.showcase img {
+  width: 100%;
+  height: 100%;
+}
+
+.showcase-item-5,
+.showcase-item-6 {
+  position: relative;
+}
+
+.showcase-item-5 .content,
+.showcase-item-6 .content {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.showcase-item-5 .content h3,
+.showcase-item-6 .content h3 {
+  font-size: 2.7rem;
+  margin-bottom: 2rem;
+  font-family: "Fraunces", serif;
+  color: rgba(0, 0, 0, 0.514);
+}
+
+.showcase-item-5 .content p,
+.showcase-item-6 .content p {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.514);
+}
+
+@media (max-width: 56.25em) {
+  .showcase {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 48rem);
+    grid-auto-rows: 48rem;
+  }
+  .showcase-item-2 {
+    grid-row: 1 / span 1;
+  }
+  .showcase-item-5 .content,
+  .showcase-item-6 .content {
+    width: 25rem;
+  }
+  .showcase-item-5 .content p,
+  .showcase-item-6 .content p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .showcase {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 38rem);
+    grid-auto-rows: 38rem;
+  }
+
+  .showcase-item-1,
+  .showcase-item-4 {
+    text-align: center;
+  }
+  .showcase-item-1 .a,
+  .showcase-item-5 .content p,
+  .showcase-item-6 .content p {
+    font-size: 1.3rem;
+  }
+  .showcase-item-1 a,
+  .showcase-item-4 a {
+    align-self: center;
+  }
+}
